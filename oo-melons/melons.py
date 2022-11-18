@@ -70,3 +70,16 @@ class InternationalMelonOrder(AbstractMelonOrder):
         """Return the country code."""
 
         return self.country_code
+
+
+class  GovernmentMelonOrder(AbstractMelonOrder):
+
+    tax = 0
+
+    passed_inspection = False
+
+
+    def mark_inspection(passed):
+
+        passed_inspection = True
+        
